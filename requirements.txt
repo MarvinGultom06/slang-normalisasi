@@ -1,9 +1,18 @@
-streamlit>=1.33
-pandas>=2.0
-transformers>=4.41
-torch>=2.1.0
-sentencepiece>=0.1.99
-python-Levenshtein>=0.21.1
-huggingface_hub>=0.23
-safetensors>=0.4.2
+streamlit==1.36.0
+pandas==2.2.2
+transformers==4.42.4
+torch==2.1.2
+sentencepiece==0.1.99
+huggingface_hub==0.24.5
+safetensors==0.4.3
+python-Levenshtein==0.21.1
 protobuf<5
+
+# === file input support ===
+pdfplumber==0.10.3      # baca PDF
+PyPDF2==3.0.1           # fallback PDF parsing
+pdfminer.six==20231228  # dependency pdfplumber
+openpyxl==3.1.2         # baca XLSX di pandas
+chardet==5.2.0          # deteksi encoding TXT
+python-magic==0.4.27    # deteksi tipe file
+python-magic-bin==0.4.27  # windows compatibility for python-magic
